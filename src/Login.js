@@ -24,12 +24,12 @@ app.get('/users/:id', (req, res) => {
 });
 
 // Rota para criar um novo usuário
-app.post('/users', (req, res) => {
-  const newUser = req.body;
-  newUser.id = users.length + 1;
-  users.push(newUser);
-  res.status(201).json(newUser);
-});
+// app.post('/users', (req, res) => {
+//   const newUser = req.body;
+//   newUser.id = users.length + 1;
+//   users.push(newUser);
+//   res.status(201).json(newUser);
+// });
 
 // Rota para atualizar um usuário existente pelo ID
 app.put('/users/:id', (req, res) => {
