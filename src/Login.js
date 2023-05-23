@@ -10,10 +10,6 @@ let users = [
 const app = express();
 app.use(bodyParser.json());
 
-// Rota para listar todos os usuários
-app.get('/users', (req, res) => {
-  res.json(users);
-});
 
 // Rota para obter um usuário específico pelo ID
 app.get('/users/:id', (req, res) => {
